@@ -19,6 +19,9 @@ export const test = base.extend<PageFixtures>({
     securePage: async ({ page }, use) => {
         await use(new SecurePage(page));
     },
+    dropdownPage: async ({ page }, use) => {
+        await use(new DropdownPage(page));
+    }
 });
 
 export { expect } from '@playwright/test'
