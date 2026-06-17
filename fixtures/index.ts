@@ -21,6 +21,9 @@ export const test = base.extend<PageFixtures>({
     },
     dropdownPage: async ({ page }, use) => {
         await use(new DropdownPage(page));
+    },
+    checkboxesPage: async ({ page }, use) => {
+        await use(new CheckboxesPage(page));
     }
 });
 
